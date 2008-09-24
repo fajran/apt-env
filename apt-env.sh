@@ -21,7 +21,7 @@
 #
 
 #
-# @version  1.2
+# @version  1.3
 #
 
 
@@ -33,8 +33,8 @@ BASH_RC=$CURRDIR/apt-env.bashrc
 [ -f $BASH_RC ] && rm -f $BASH_RC
 cat > $BASH_RC <<BASHRC
 
-CURRDIR=`pwd`
-SRCLIST=/etc/apt/sources.list
+CURRDIR=$CURRDIR
+SRCLIST=$SRCLIST
 
 ENVDIR=\$CURRDIR/virtual
 
